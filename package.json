@@ -12,8 +12,16 @@
 	"engines": {
 		"node": ">=4"
 	},
+	"babel": {
+    	"presets": [
+      		"es2015",
+      		"minify"
+    	]
+  	},
+  	"main": "dist/tieqviet.min.js",
 	"scripts": {
-		"test": "xo && ava"
+		"test": "xo && ava",
+		"build": "BABEL_ENV=production && babel index.js -o ./dist/tieqviet.min.js"
 	},
 	"files": [
 		"index.js"
@@ -24,6 +32,10 @@
 	"dependencies": {},
 	"devDependencies": {
 		"ava": "^0.20.0",
+		"babel-cli": "^6.26.0",
+		"babel-minify": "^0.2.0",
+		"babel-preset-es2015": "^6.24.1",
+		"babel-preset-minify": "^0.2.0",
 		"xo": "^0.18.2"
 	}
 }
