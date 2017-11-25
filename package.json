@@ -1,0 +1,29 @@
+{
+	"name": "tieqviet",
+	"version": "0.0.0",
+	"description": "",
+	"license": "MIT",
+	"repository": "phanan/tieqviet",
+	"author": {
+		"name": "Phan An",
+		"email": "me@phanan.net",
+		"url": "https://phanan.net"
+	},
+	"engines": {
+		"node": ">=4"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		""
+	],
+	"dependencies": {},
+	"devDependencies": {
+		"ava": "^0.20.0",
+		"xo": "^0.18.2"
+	}
+}
