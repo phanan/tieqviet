@@ -1,6 +1,6 @@
 {
 	"name": "tieqviet",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "",
 	"license": "MIT",
 	"repository": "phanan/tieqviet",
@@ -13,12 +13,12 @@
 		"node": ">=4"
 	},
 	"babel": {
-    	"presets": [
-      		"es2015",
-      		"minify"
-    	]
-  	},
-  	"main": "dist/tieqviet.min.js",
+		"presets": [
+			"es2015",
+			"minify"
+		]
+	},
+	"main": "dist/tieqviet.min.js",
 	"scripts": {
 		"test": "xo && ava",
 		"build": "BABEL_ENV=production && babel index.js -o ./dist/tieqviet.min.js"
