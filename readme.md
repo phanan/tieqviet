@@ -1,4 +1,4 @@
-# <%= moduleName %> [![Build Status](https://travis-ci.org/phanan/tieqviet.svg?branch=master)](https://travis-ci.org/phanan/tieqviet)
+# tieqviet [![Build Status](https://travis-ci.org/phanan/tieqviet.svg?branch=master)](https://travis-ci.org/phanan/tieqviet)
 
 >
 
