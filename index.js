@@ -2,7 +2,7 @@
 
 const maps = [
     ['k(h|H)', 'x'],
-	['K(h|H)', 'X'],
+    ['K(h|H)', 'X'],
     ['c(?!(h|H))|q', 'k'],
     ['C(?!(h|H))|Q', 'K'],
     ['t(r|R)|c(h|H)', 'c'],
@@ -24,7 +24,6 @@ const maps = [
 ];
 
 module.exports = input => {
-
     if (typeof input !== 'string') {
         throw new TypeError(`Expected a string, got ${typeof input}`);
     }
