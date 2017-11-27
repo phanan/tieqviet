@@ -7,7 +7,8 @@ const asserts = [
 	['dạy và học tiếng nói, chữ viết của dân tộc thiểu số;', 'zạy và họk tiếq nói, cữ viết kủa zân tộk wiểu số;'],
 	['dạy ngoại ngữ.', 'zạy qoại qữ.'],
 	['Tiếng Việt giàu và đẹp. Đùa đấy ahihi đồ ngốk.', 'Tiếq Việt zàu và dẹp. Dùa dấy ahihi dồ qốk.'],
-	['TRƯỜNG GIÁO DỤC ĐẠI HỌC CHỮ TO', 'CƯỜQ ZÁO ZỤK DẠI HỌK CỮ TO']
+	['TRƯỜNG GIÁO DỤC ĐẠI HỌC CHỮ TO', 'CƯỜQ ZÁO ZỤK DẠI HỌK CỮ TO'],
+	['CHỮ TÀI CHỮ MỆNH KHÉO LÀ GHÉT NHAU', 'CỮ TÀI CỮ MỆN\' XÉO LÀ GÉT N\'AU']
 ];
 
 test('title', t => {
