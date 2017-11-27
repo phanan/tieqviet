@@ -2,46 +2,32 @@
 
 const maps = [
 	['kh', 'x'],
-	['c(?!h)', 'k'],
-	['q', 'k'],
-	['tr', 'c'],
-	['ch', 'c'],
-	['d', 'z'],
-	['gi', 'z'],
-	['r', 'z'],
+	['K(h|H)', 'X'],
+	['c(?!h)|q', 'k'],
+	['C(?!(h|H))|Q', 'K'],
+	['tr|ch', 'c'],
+	['T(r|R)|C(h|H)', 'C'],
+	['d|gi|r', 'z'],
+	['D|G(i|I)|R', 'Z'],
 	['đ', 'd'],
+	['Đ', 'D'],
 	['ph', 'f'],
+	['P(h|H)', 'F'],
 	['ngh?', 'q'],
-	['gh', 'g'],
+	['N(G|g)(H|h)?', 'Q'],
 	['th', 'w'],
-	['nh', 'n\'']
+	['T(h|H)', 'W'],
+	['nh', 'n\''],
+	['N(H|h)', 'N\'']
 ];
-
-/**
- * Capitalize the first letter in a string.
- * @param {*} string
- */
-const capitalize = string => `${string.charAt(0).toUpperCase()}${string.slice(1)}`;
-
-/**
- * Convert using a single map element.
- * @param {*} input
- * @param {*} map
- */
-const convert = (input, map) => {
-	return input
-		.replace(new RegExp(map[0], 'g'), map[1])
-		.replace(new RegExp(capitalize(map[0]), 'g'), capitalize(map[1]));
-};
 
 module.exports = input => {
 	if (typeof input !== 'string') {
 		throw new TypeError(`Expected a string, got ${typeof input}`);
 	}
 
-	maps.forEach(map => {
-		input = convert(input, map);
-	});
-
-	return input;
+	return maps.reduce((seed, map) => {
+		input = input.replace(new RegExp(map[0], 'g'), map[1]);
+		return input;
+	}, input);
 };
