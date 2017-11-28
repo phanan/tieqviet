@@ -9,7 +9,8 @@ const asserts = [
 	['Tiếng Việt giàu và đẹp. Đùa đấy ahihi đồ ngốk.', 'Tiếq Việt zàu và dẹp. Dùa dấy ahihi dồ qốk.'],
 	['TRƯỜNG GIÁO DỤC ĐẠI HỌC CHỮ TO', 'CƯỜQ ZÁO ZỤK DẠI HỌK CỮ TO'],
 	['CHỮ TÀI CHỮ MỆNH KHÉO LÀ GHÉT NHAU', 'CỮ TÀI CỮ MỆN\' XÉO LÀ GÉT N\'AU'],
-	['Cái gì thế này', 'Kái zì wế này']
+	['Cái gì thế này', 'Kái zì wế này'],
+	['CÁI GÌ THẾ NÀY', 'KÁI ZÌ WẾ NÀY']
 ];
 
 test('title', t => {
